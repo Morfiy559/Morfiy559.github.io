@@ -1094,5 +1094,41 @@ header .ico {
   .withoutp {
     padding: 0;
   }
+  .content10 .logo_title {
+    font-size: 22px;
+  }
+  .content10 .Title {
+    font-size: 18px;
+  }
+  .content4 .block_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content4 .block_btn #b1 {
+    width: auto;
+  }
+  .content4 .block_btn #b2 {
+    width: auto;
+  }
+  .content4 .block_btn #b3 {
+    width: auto;
+  }
+  .content4 .block_btn #b4 {
+    width: auto;
+  }
+  .content4 .block_btn #b5 {
+    width: auto;
+  }
+  .content8 .title10 {
+    height: auto;
+  }
+  .content8 .subtitle10 {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
