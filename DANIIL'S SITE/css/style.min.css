@@ -214,7 +214,7 @@ svg, main {
   width: 1000px;
   height: 1200px;
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translateX(-45%);
           transform: translateX(-45%);
