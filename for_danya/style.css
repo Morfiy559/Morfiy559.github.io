@@ -8,8 +8,8 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  height: auto  ;
   /* top: -56px; */
   z-index: -1;
   filter: brightness(0.5);
@@ -46,14 +46,3 @@ h4{
 .withoutdec:hover{
   color: lightcoral;
 }
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-  body{
-    width: 320px;
-    overflow: hidden;
-  }
-  video{
-    transform: translateX(-50%);
-    
-    
-  }
-  }
