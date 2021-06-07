@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navcolor.css">
+    <link rel="stylesheet" href="navcolor.css" />
   </head>
   <body>
     <header>
@@ -43,26 +43,22 @@
               <li class="nav-item">
                 <a class="nav-link" href="products.html">Products</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="contacts.html">Contacts</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    
-      <video
+    <video
       class=".modal-dialog .modal-fullscreen"
       src="surfing.mp4"
       muted
       autoplay
       loop
-    >
-    
-      
-    </video>
+    ></video>
 
     <footer></footer>
     <script
@@ -70,12 +66,12 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script
+    <script defer
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
+    <script defer type="text/javascript">
       $("document").ready(function () {
         $(" a").each(function () {
           if (
@@ -85,7 +81,15 @@
             $(this).addClass("active");
           }
         });
+        w = $( window ).width();
       });
+      
+      $( window ).resize( function(){
+        if( w != $( window ).width() ){
+          $('video').attr('src', 'surfing320.mp4');
+        }
+      });
+      
     </script>
   </body>
 </html>
