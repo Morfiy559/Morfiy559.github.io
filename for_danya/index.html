@@ -43,22 +43,24 @@
               <li class="nav-item">
                 <a class="nav-link" href="products.html">Products</a>
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="contacts.html">Contacts</a>
-              </li> -->
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
+   <div class="video">
     <video
-      class=".modal-dialog .modal-fullscreen"
-      src="surfing.mp4"
-      muted
-      autoplay
-      loop
-    ></video>
+    class=".modal-dialog .modal-fullscreen"
+    src="surfing.mp4"
+    muted
+    autoplay
+    loop
+  ></video>
+   </div>
 
     <footer></footer>
     <script
@@ -66,29 +68,19 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script defer
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script defer type="text/javascript">
-      $("document").ready(function () {
-        $(" a").each(function () {
-          if (
-            "http://localhost/for%20danya/" + $(this).attr("href") ==
-            window.location.href
-          ) {
-            $(this).addClass("active");
-          }
-        });
-        w = $( window ).width();
-      });
-      
-      $( window ).resize( function(){
-        if( w != $( window ).width() ){
-          $('video').attr('src', 'surfing320.mp4');
-        }
-      });
+    <script>
+      let navbar=document.querySelector("#navbarNav"),nav = document.querySelector('nav'),button = document.querySelector("button");
+       button.addEventListener("click",changeColor);
+       function changeColor(){
+        if(nav.style.background!=='darkslategray')
+       {
+         nav.style.background='darkslategray';
+       }
+       else{
+        nav.style.background='';
+       }
+       console.log('rr');
+       }
       
     </script>
   </body>

@@ -5,14 +5,19 @@
 }
 
 video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
+  position: relative;
+  
+  min-width: 100%;
   height: auto  ;
   /* top: -56px; */
-  z-index: -1;
+  
   filter: brightness(0.5);
+}
+.video{
+  position: relative;
+  top: -56px;
+  overflow: hidden;
+  z-index: -1;
 }
 .item {
   width: 100%;
@@ -45,4 +50,12 @@ h4{
 }
 .withoutdec:hover{
   color: lightcoral;
+}
+nav{
+  transition: 0.5s all; 
+}
+@media(min-width: 320px) and (max-width: 480px){
+  video{
+    left:-30%;
+  }
 }
