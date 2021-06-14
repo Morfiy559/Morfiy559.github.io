@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 #abs {
   position: absolute;
   left: 75px;
@@ -20,16 +24,16 @@ video {
   z-index: -1;
 }
 .item {
-  width: 100%;
-  height: 250px;
+  height: auto;
   /* border: rgb(187, 52, 240) 3px solid; */
-  border-radius: 5%;
+  /* border-radius: 5%; */
   box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-img {
-  margin: 0  20%;
-width: 60%;
-height: 60%;
+.item img {
+  display: block;
+  margin: 0 auto;
+width: 150px;
+height: 150px;
 border-radius: 50%;
 }
 h1 {
@@ -58,4 +62,21 @@ nav{
   video{
     left:-30%;
   }
+  /* .item{
+    width: 272px;
+  } */
+}
+#inst{
+  width: 20px;
+}
+#contacts{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
