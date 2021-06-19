@@ -56,7 +56,17 @@
     <div class="container main">
       <div class="row">
         <div class="col-md-7">
-          <img src="../сфера.jpg" alt="" />
+          <div class="sim-slider">
+            <ul class="sim-slider-list">
+              <li><img src="../screen.png" alt="screen"></li> <!-- это экран -->
+              <li class="sim-slider-element"><img src="../сфера.jpg" alt="0"></li>
+              <li class="sim-slider-element"><img src="../клубничка2.jpg" alt="0"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <!-- <div class="sim-slider-dots"></div> -->
+          </div>
+          <!-- <img src="../сфера.jpg" alt="" /> -->
         </div>
         <div
           class="
@@ -89,6 +99,10 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- подключение слайдера -->
+    <script src="sim-slider.js"></script>
+    <!-- вызов слайдера -->
+    <script>new Sim()</script>
     <script></script>
   </body>
 </html>
