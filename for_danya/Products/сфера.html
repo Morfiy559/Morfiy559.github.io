@@ -62,11 +62,14 @@
               <li class="sim-slider-element"><img src="../сфера.jpg" alt="0"></li>
               <li class="sim-slider-element"><img src="../клубничка2.jpg" alt="0"></li>
             </ul>
-            <div class="sim-slider-arrow-left"></div>
-            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-arrow-left">
+              <img src="left-arrow.svg" alt="">
+            </div>
+            <div class="sim-slider-arrow-right">
+              <img src="right-arrow.svg" alt="">
+            </div>
             <!-- <div class="sim-slider-dots"></div> -->
           </div>
-          <!-- <img src="../сфера.jpg" alt="" /> -->
         </div>
         <div
           class="
@@ -103,6 +106,22 @@
     <script src="sim-slider.js"></script>
     <!-- вызов слайдера -->
     <script>new Sim()</script>
-    <script></script>
+    <script>
+      let slider = document.querySelector('.sim-slider'), 
+      right = document.querySelector(".sim-slider-arrow-right img"),
+      left = document.querySelector(".sim-slider-arrow-left img");
+      slider.onmouseover = slider.onmouseout = handler;
+
+      function handler(event) {
+        if (event.type == 'mouseover') {
+          right.style.opacity = '0.6';
+          left.style.opacity = '0.6';
+        }
+        if (event.type == 'mouseout') {
+          right.style.opacity = '0';
+          left.style.opacity = '0'
+        }
+      }
+    </script>
   </body>
 </html>

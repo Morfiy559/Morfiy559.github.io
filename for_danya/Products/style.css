@@ -92,26 +92,28 @@ img {
 /* Navigation item styles */
 div.sim-slider-arrow-left,
 div.sim-slider-arrow-right {
-  width: 22px;
-  height: 40px;
+  width: 20%;
+  height: 100%;
   position: absolute;
   cursor: pointer;
   opacity: 0.6;
   z-index: 4;
+  display: flex;
+  align-items: center;
 }
 
 div.sim-slider-arrow-left {
-  left: 10px;
-  top: 40%;
-  display: block;
-  background: url("left-arrow.svg") no-repeat;
+  left: 0;
+  top: 0;
+  /* display: block; */
+  /* background: url("left-arrow.svg") no-repeat; */
 }
 
 div.sim-slider-arrow-right {
-  right: 10px;
-  top: 40%;
-  display: block;
-  background: url("right-arrow.svg") no-repeat;
+  right: 0;
+  top: 0;
+  /* display: block; */
+  /* background: url("right-arrow.svg") no-repeat; */
 }
 
 div.sim-slider-arrow-left:hover {
