@@ -101,7 +101,10 @@ div.sim-slider-arrow-right {
   display: flex;
   align-items: center;
 }
-
+div.sim-slider-arrow-left img,
+div.sim-slider-arrow-right img{
+  width: 20%;
+}
 div.sim-slider-arrow-left {
   left: 0;
   top: 0;
@@ -110,6 +113,7 @@ div.sim-slider-arrow-left {
 }
 
 div.sim-slider-arrow-right {
+  justify-content:flex-end;
   right: 0;
   top: 0;
   /* display: block; */
